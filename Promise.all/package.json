@@ -1,0 +1,28 @@
+{
+  "name": "promise.all",
+  "version": "1.0.0",
+  "description": "Optimizing Async / Await usage with Promise.all",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-node benchmark.ts",
+    "start": "ts-node index.ts"
+  },
+  "keywords": [
+    "NodeJS",
+    "Promise.all",
+    "Async",
+    "Await",
+    "Typescript",
+    "Javascript",
+    "Optimization"
+  ],
+  "author": "Atiq <https://twitter.com/blacnoon>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/benchmark": "^2.1.2",
+    "@types/node": "^20.3.3",
+    "benchmark": "^2.1.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}

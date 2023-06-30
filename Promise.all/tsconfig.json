@@ -1,0 +1,68 @@
+{
+    "compilerOptions": {
+        /* Basic Options */
+        // All modern browsers support ES6/ES2015. ES6 is a good choice if support
+        // for all modern browsers is required.
+        "target": "esnext",
+        // Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'.
+        "module": "commonjs",
+        // Do not emit outputs by default. We only use type checking for now.
+        "noEmit": true,
+        // Do incremental builds, typechecking needs to be only done if files have been changed.
+        "incremental": true,
+        /* Allow javascript files to be compiled. */
+        "allowJs": true,
+        // Enable react specific syntax.
+        "jsx": "react",
+        /* Specify library files to be included in the compilation. */
+        "lib": [
+            "dom",
+            "es2015",
+            "es2016",
+            "es2019",
+            "es2021"
+        ],
+        // Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'.
+        "downlevelIteration": true,
+        // isolatedModules need to be set as true so the code transpiles correctly with babel.
+        // babel transpiler (and others) operate file-by-file basis and not by the whole graph.
+        // Code needs to be correctly interpreted by a single-file transpilation process.
+        // Transpile each file as a separate module (similar to 'ts.transpileModule').
+        "isolatedModules": true,
+        /* Strict Type-Checking Options */
+        // Enable all strict type-checking options.
+        "strict": false,
+        /* Enable strict checking of property initialization in classes. */
+        "strictPropertyInitialization": false,
+        /* Raise error on expressions and declarations with an implied 'any' type. */
+        "noImplicitAny": false,
+        // Report errors on unused locals.
+        "noUnusedLocals": false,
+        // Report errors on unused parameters.
+        "noUnusedParameters": false,
+        /* Module Resolution Options */
+        "skipLibCheck": true,
+        // Allow default imports from modules with no default export. This does not affect code emit, just typechecking.
+        "allowSyntheticDefaultImports": true,
+        // Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6).
+        "moduleResolution": "node",
+        // Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports.
+        // Implies 'allowSyntheticDefaultImports'.
+        "esModuleInterop": true,
+        // Allows importing modules with ".json" extension.
+        "resolveJsonModule": true,
+        /* Advanced Options */
+        // Drop import statements that only reference to types.
+        "importsNotUsedAsValues": "remove",
+        // Disallow inconsistently-cased references to the same file.
+        "forceConsistentCasingInFileNames": true,
+        // Allow changing the type with catch clauses.
+        "useUnknownInCatchVariables": false,
+        // Enables stricter usage for properties with `?` prefix.
+        "exactOptionalPropertyTypes": false,
+        "experimentalDecorators": true,
+        /* Do not emit comments to output. */
+        "removeComments": true,
+        "pretty": true
+    }
+}
