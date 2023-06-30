@@ -22,6 +22,9 @@ export const dontDoThis = async () => {
 /** Completes at 2 seconds */
 export const doThis = async () => {
     const [accounts, supporters, revenues] = await Promise.all([fakeApiFetch(), fakeApiFetch(), fakeApiFetch()]);
+
+    // tbd - what about error handling?
+
     return {
         accounts: accounts.data,
         supporters: supporters.data,
