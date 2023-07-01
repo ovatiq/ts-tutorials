@@ -29,7 +29,8 @@ export const dontDoThis = async () => {
    If each API call took 2 seconds this completes at 2 seconds.
    This is because the Promise.all operation will only take as long as the longest response takes.
    For example, if supporters take 5 seconds and accounts and revenues take 2, Promise.all will complete at 5 seconds.
-   However, the accounts and revenues will complete at 2 and can still be operated against if you use thenables and can likely finish before the 5 seconds.
+   However, the accounts and revenues will complete at 2 and can still be operated against if you use thenables
+   and can likely finish before the 5 seconds.
 */
 export const doThis = async () => {
     const [accounts, supporters, revenues] = await Promise.all([fakeApiFetch(), fakeApiFetch(), fakeApiFetch()]);
